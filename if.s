@@ -10,17 +10,17 @@
 .global main
 
 main:
-  ldr r1, =a
+  ldr r1, =a //r1 es a
   ldr r1, [r1]
-  ldr r2, =b
+  ldr r2, =b //r2 es b
   ldr r2, [r2]
-  cmp r1, r2
+  cmp r1, r2 //se comparan
   
-sisi:
+sisi: //en caso de que se cumpla, r1 se hace 1
   mov r1, #1
   b final
   
-sino:
+sino: //en caso de no cumplirse r1 es 0
   mov r1, #0
   
-final:  bx lr
+final:  bx lr //imprimimos el valor final
