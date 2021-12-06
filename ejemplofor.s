@@ -11,7 +11,7 @@ var1: .asciz "%d\012"
 .global main
 main: 
   push  {r4, lr}
-  mov r4, #0
+  mov r4, #0 //Se asigna el valor de 0 a r4
   
 bfor:
   mov r1, r4
