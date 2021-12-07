@@ -13,14 +13,14 @@
 #clean:
   #rm programa
 
-sumavectores:
-  g++ sumavectores.s -g -o sumavectores
+ejemplofor:
+  g++ ejemplofor.s -g -o ejemplofor
   
 run:
-  ./sumavectores
+  ./ejemplofor
   
 debugg:
-  gdb sumavectores
+  gdb ejemplofor
   
 clean:
-  rm sumavectores
+  rm ejemplofor
