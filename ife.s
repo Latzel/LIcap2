@@ -9,18 +9,19 @@
 .text
 .global main
 
-main:
-  ldr r1, =a //r1 es a
-  ldr r1, [r1]
-  ldr r2, =b //r2 es b
-  ldr r2, [r2]
-  cmp r1, r2 //se comparan
-  
-sisi: //en caso de que se cumpla, r1 se hace 1
+_start:
   mov r1, #1
-  b final
+  mov r2, #2
+  cmp r1, r2
+  bne else
   
-sino: //en caso de no cumplirse r1 es 0
-  mov r1, #0
+if:
+  add r0, r1, #5
+  b exit
   
-final:  bx lr //imprimimos el valor final
+else:
+  add r0, r1, #6
+  
+exit:
+  mov r7, #1
+  svc 0
