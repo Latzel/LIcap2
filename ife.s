@@ -5,9 +5,8 @@
 @@ Fecha de revision: 26/11/21
 
 
-.data
 .text
-.global main
+.global _start
 
 _start:
   mov r1, #1 //r1 toma valor de 1
