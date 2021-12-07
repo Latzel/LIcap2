@@ -13,14 +13,14 @@
 #clean:
   #rm programa
 
-programa:
-  g++ programa.s -g -o programa
+sumavectores:
+  g++ sumavectores.s -g -o sumavectores
   
 run:
-  ./programa
+  ./sumavectores
   
 debugg:
-  gdb programa
+  gdb sumavectores
   
 clean:
-  rm programa
+  rm sumavectores
