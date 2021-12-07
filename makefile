@@ -1,18 +1,17 @@
 #Makefile generico para los programas de ensamblador
 
-/*
-programa:
-  g++ programa.s -g -o programa
+
+#programa:
+  #g++ programa.s -g -o programa
   
-run:
-  ./programa
+#run:
+  #./programa
   
-debugg:
-  gdb programa
+#debugg:
+  #gdb programa
   
-clean:
-  rm programa
-*/
+#clean:
+  #rm programa
 
 programa:
   g++ programa.s -g -o programa
