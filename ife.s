@@ -10,18 +10,18 @@
 .global main
 
 _start:
-  mov r1, #1
-  mov r2, #2
-  cmp r1, r2
-  bne else
+  mov r1, #1 //r1 toma valor de 1
+  mov r2, #2 //r2 toma el valor de 2
+  cmp r1, r2 //se hace la comparacion
+  bne else //llamada al metodo else
   
 if:
-  add r0, r1, #5
+  add r0, r1, #5 //Se suma r5 y r1 y se guardan en r0
   b exit
   
 else:
-  add r0, r1, #6
+  add r0, r1, #6 //Se suma r6 y r1 y se guardan en r0
   
-exit:
+exit: //salida
   mov r7, #1
   svc 0
