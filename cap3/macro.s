@@ -19,7 +19,6 @@ main: push {r4, lr}
 //Primera llamada abs 1
   mov r0, #1
   bl  abs
-//Imprimo primera llamada
   mov r1, r0
   ldr r0, =var1
   bl  printf
