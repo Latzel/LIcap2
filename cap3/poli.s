@@ -27,7 +27,7 @@ main: push {r4, lr}
   mov r1, r0
   ldr r0, =var1
   bl  printf
-//Segunda llamada, esta vez poly3 (1, -1, 1, -1, 8)
+//Segunda llamada a poly
   mov r0, #1
   mov r1, #-1
   mov r2, #1
