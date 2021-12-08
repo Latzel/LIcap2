@@ -1,3 +1,9 @@
+@@ Instituto Tecnologico de Tijuana
+@@ Depto de Sistemas y Computacion
+@@ Ing. En Sistemas Computacionales
+@@ Autor: Axel Josue De La Rosa Lopez @nickname: Latzel
+@@ Fecha de revision: 12/12/21
+
 .data
 cadena: .asciz " Hola Mundo !\n "
 cadenafin:
