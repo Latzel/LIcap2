@@ -5,7 +5,7 @@
 @@ Fecha de revision: 12/12/21
 
 .data
-cadena: .asciz " Hola Mundo !\n "
+cadena: .asciz "Hola Mundo!\n "
 cadenafin:
 .text
 .global main
