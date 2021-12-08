@@ -6,24 +6,24 @@
 
 
 .data
-var1 : .asciz " %d\ n"
-seed : .word 1
-const1 : .word 1103515245
-const2 : .word 12345
+var1: .asciz " %d\ n"
+seed: .word 1
+const1: .word 1103515245
+const2: .word 12345
 
 .text
 .global main
 
 //se guardan los registros
-main : push {r4, r5}
+main: push {r4, r5}
 //llamado a mysrand con parametro 42
   mov r0, #42
   bl mysrand
 //Inicializamos contador de bucle en r4
   mov r4, #5
-//Bucle que imprime 5 nú meros aleatorios
+//Bucle que imprime 5 números aleatorios
 
-bucle : bl myrand
+bucle: bl myrand
 //leo nú mero aleatorio
   mov r1, r0
 //paso valor a r1
@@ -37,10 +37,10 @@ bucle : bl myrand
 //salgo si llego a cero
 //Recuperamos registros y salimos
 
-  pop { r4, r5 }
+  pop {r4, r5}
   bx lr
   
-myrand : ldr r1, = seed
+myrand: ldr r1, =seed
   ldr r0, [r1]
   ldr r2, [r1, #4]
   mul r3, r0, r2
@@ -51,6 +51,6 @@ myrand : ldr r1, = seed
   mov r0, r0, LSR #17
   bx lr
   
-mysrand : ldr r1, = seed
+mysrand: ldr r1, =seed
   str r0, [r1]
   bx lr
