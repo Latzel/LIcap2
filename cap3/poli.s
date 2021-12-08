@@ -30,14 +30,14 @@ mov r1, r0
 ldr r0, = var1
 bl printf
 //Segunda llamada, esta vez poly3 (1, -1, 1, -1, 8)
-mov r0, # 1
-mov r1, # -1
-mov r2, # 1
-mov r3, # -1
-mov r4, # 8
-push { r4 }
+mov r0, #1
+mov r1, #-1
+mov r2, #1
+mov r3, #-1
+mov r4, #8
+push {r4}
 bl poly3
-add sp, # 4
+add sp, #4
 //imprimo resultado de segunda llamada
 mov r1, r0
 ldr r0, = var1
