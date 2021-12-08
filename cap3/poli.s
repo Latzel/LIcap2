@@ -59,8 +59,8 @@ bx lr
 
 .equ param5, 4 *1
 
-poly3 : push { r4 } //salvaguarda r4
-ldr r4, [ sp, # param5 ] //leo r4 de pila
+poly3:  push {r4} //salvaguarda r4
+ldr r4, [ sp, # param5 ] //leo r4
 smlabb r3, r2, r4, r3 //r3= c*x + d
 smulbb r2, r4, r4 @ r2= x*x
 smlabb r3, r1, r2, r3 //r3= b*(x*x) + (c*x + d)
