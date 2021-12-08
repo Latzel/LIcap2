@@ -7,14 +7,14 @@
 
 
 .data
-seed : .word 1
-const1 : .word 1103515245
-const2 : .word 12345
+seed: .word 1
+const1: .word 1103515245
+const2: .word 12345
 
 .text
 .global myrand, mysrand
-myrand : 
-  ldr r1, = seed 
+myrand: 
+  ldr r1, =seed 
   //leo puntero a semilla
   ldr r0, [ r1 ] 
   //leo valor de semilla
