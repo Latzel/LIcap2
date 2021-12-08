@@ -11,10 +11,10 @@ cadenafin:
 .global main
 
 main: push { r7, lr } //preservamos reg. 
-mov r0, #1 //salida est á ndar 
+mov r0, #1 
 ldr r1, =cadena //cadena a enviar 
 mov r2, #cadenafin - cadena //longitud 
-mov r7, #4 //seleccionamos la 
+mov r7, #4
 swi #0 //llamada a sistema "write"
 mov r0, #0 //devolvemos ok
 pop {r7, lr} //recuperamos reg.
