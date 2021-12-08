@@ -6,11 +6,12 @@
 
 
 .data
-var1 : .asciz " %d\ n"
+var1: .asciz " %d\ n"
 .text
 .global main
+
 //Salvo registros
-main : push { r4, lr }
+main: push { r4, lr }
 //Introduzco los 4 primeros par á metros vía registros
 mov r0, # 1
 mov r1, # 2
