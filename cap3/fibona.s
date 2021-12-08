@@ -12,11 +12,12 @@ main:  push  {r4, lr}
 bucle:  mov r0, r4 //tomo contador como parametro
   bl  fibo //llamo a la funcion
   mov r1, r0 //paso resultado a r1
-  ldr r0, = var1 //pongo cadena en r0
+  ldr r0, =var1 //pongo cadena en r0
   bl  printf //llamo a funci ón printf
   add r4, r4, #1 //incremento contador de bucle
   cmp r4, #10 //comparo si es menor de 10
   bne bucle //si llegamos a 10 salgo de bucle
+  
 //Recupero registros y salgo de main
   pop {r4, lr}
   bx  lr
