@@ -6,7 +6,7 @@
 
 
 .data
-var1:.asciz " %d\ n"
+var1: .asciz " %d\ n"
 .text
 .global main
 
@@ -16,14 +16,14 @@ main: push {r4, lr}
   mov r1, #2
   mov r2, #3
   mov r3, #4
-//Introduzco el 5o par á metro por pila
+//Introduzco el quinto parametro por pila
   mov r4, #5
   push  {r4}
-//Llamada a funcion poly3 (1, 2, 3, 4, 5)
+//Llamada a funcion poly3
   bl  poly3
-//Equilibro la pila ( debido al 5o par á metro )
+//Equilibro la pila
   add sp, #4
-//Paso resultado de la funci ón a r1, cadena a imprimir a r0 y llamo a la funcion
+//Paso resultado de la funcion a r1, cadena a imprimir a r0 y llamo a la funcion
   mov r1, r0
   ldr r0, =var1
   bl  printf
