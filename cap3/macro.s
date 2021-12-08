@@ -1,3 +1,10 @@
+@@ Instituto Tecnologico de Tijuana
+@@ Depto de Sistemas y Computacion
+@@ Ing. En Sistemas Computacionales
+@@ Autor: Axel Josue De La Rosa Lopez @nickname: Latzel
+@@ Fecha de revision: 26/11/21
+
+
 .macro abs
 tst r0, r0
 negmi r0, r0
