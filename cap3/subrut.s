@@ -3,7 +3,7 @@
 @@ Depto de Sistemas y Computacion
 @@ Ing. En Sistemas Computacionales
 @@ Autor: Axel Josue De La Rosa Lopez @nickname: Latzel
-@@ Fecha de revision: 26/11/21
+@@ Fecha de revision: 8/12/21
 
 
 .data
