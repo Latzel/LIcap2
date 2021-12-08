@@ -27,7 +27,7 @@ bucle: bl myrand
 //leo nú mero aleatorio
   mov r1, r0
 //paso valor a r1
-  ldr r0, = var1 
+  ldr r0, =var1 
 //pongo cadena en r0
   bl printf 
 //lamo a funci ón printf
