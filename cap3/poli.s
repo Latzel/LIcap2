@@ -42,9 +42,9 @@ main: push {r4, lr}
   add sp, #4
   
 //imprimo resultado de segunda llamada
-  movr1, r0
-  ldrr0, =var1
-  blprintf
+  mov r1, r0
+  ldr r0, =var1
+  bl  printf
   
 //Llamo e imprimo poly3 (2, 0, 0, 0, 8)
   mov r0, #2
