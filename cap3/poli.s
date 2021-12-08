@@ -57,7 +57,7 @@ main: push {r4, lr}
   pop {r4, lr}
   bx  lr
 
-  .equ  param5, 4 *1
+  .equ  param5, 4*1
 
 poly3:  push {r4} 
   ldr r4, [sp, #param5]
