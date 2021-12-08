@@ -32,8 +32,8 @@ myrand :
 /* Estas dos lí neas devuelven "seed > >16 & 0x7fff ".
 Con un peque ño truco evitamos el uso del AND */
 
-  LSL r0, # 1
-  LSR r0, # 17
+  LSL r0, #1
+  LSR r0, #17
   bx lr
   mysrand : ldr r1, = seed
   str r0, [r1]
