@@ -29,8 +29,8 @@ myrand :
   str r0, [r1] 
   //guardo en variable seed
   
-/* Estas dos lí neas devuelven "seed > >16 & 0x7fff ".
-Con un peque ño truco evitamos el uso del AND */
+/* Estas dos líneas devuelven "seed > >16 & 0x7fff ".
+Con un pequeño truco evitamos el uso del AND */
 
   LSL r0, #1
   LSR r0, #17
