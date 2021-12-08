@@ -11,7 +11,7 @@
   
 .endm
 .data
-var1: .asciz "%d\ n"
+var1: .asciz "%d\n"
 .text
 .global main
 //Salvo registros
