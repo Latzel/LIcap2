@@ -10,9 +10,8 @@ var1:.asciz " %d\ n"
 .text
 .global main
 
-//Salvo registros
 main: push {r4, lr}
-//Introduzco los 4 primeros parametros vía registros
+//Introduzco los 4 primeros parametros
   mov r0, #1
   mov r1, #2
   mov r2, #3
