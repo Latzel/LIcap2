@@ -12,7 +12,7 @@ var1:.asciz " %d\ n"
 
 //Salvo registros
 main: push {r4, lr}
-//Introduzco los 4 primeros par á metros vía registros
+//Introduzco los 4 primeros parametros vía registros
   mov r0, #1
   mov r1, #2
   mov r2, #3
