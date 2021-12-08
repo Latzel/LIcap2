@@ -1,10 +1,10 @@
 .data
-var1 :  .asciz " %d\ n"
+var1:  .asciz " %d\ n"
 .text
 
 .global main
 //Salvo registros
-main :  push  {r4, lr}
+main:  push  {r4, lr}
 //Inicializo contador del bucle a 0 en r4
   mov r4, #0
 
