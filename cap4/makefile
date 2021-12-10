@@ -1,13 +1,13 @@
 #Makefile generico para los programas de ensamblador
 
-programa:
-  g++ programa.s -g -o programa
+hm:
+  g++ hm.s -g -o hm
   
 run:
-  ./programa
+  ./hm
   
 debugg:
-  gdb programa
+  gdb hm
   
 clean:
-  rm programa
+  rm hm
